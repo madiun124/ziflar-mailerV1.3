@@ -12,6 +12,7 @@
 	   $title = stripslashes($title);
 	   $allemails = explode("\n", $emaillist);
 	   $realname = base64_encode($realname);
+	   $subject = '=?utf-8?B?'.base64_encode($subject).'?=';
 	if($_POST['group1']=="0"){$title=$subject;include("templates/fbb.php");}
 	if($_POST['group1']=="1"){$title=$subject;include("templates/fbg.php");}
 	if($_POST['group1']=="2"){$title=$subject;include("templates/ppll.php");}
